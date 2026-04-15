@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .header {
   position: fixed;
   top: 0;
@@ -16,21 +17,21 @@
   transition: all 0.5s;
 }
 /* 스크롤될때 헤더 변경 */
-.header:hover {
+.header.active {
   height: 80px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 10px 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 /* 로고변경 */
-.header:hover .logo {
+.header.active .logo {
   background: url("../images/logo.png") no-repeat center;
   background-size: cover;
 }
 /* 메뉴변경 */
-.header:hover .gnb > li > a {
+.header.active .gnb > li > a {
   color: #222;
 }
-.header:hover .gnb > li > a > span::after {
+.header.active .gnb > li > a > span::after {
   background-color: #222;
 }
 /* 메뉴 밑줄 변경 */
