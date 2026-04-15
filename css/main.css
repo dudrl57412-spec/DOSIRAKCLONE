@@ -4,6 +4,7 @@
 @import url("modal.css");
 @import url("header.css");
 @import url("visual.css");
+@import url("service.css");
 @import url("about.css");
 @import url("business.css");
 @import url("footer.css");
@@ -13,7 +14,7 @@
   width: 95%;
   max-width: 1420px;
   margin: auto;
-  background-color: red;
+  /* background-color: rgb(247, 165, 165); */
 }
 /* 폰트 */
 h1,
