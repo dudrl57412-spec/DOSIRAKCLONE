@@ -8,6 +8,7 @@
 @import url("about.css");
 @import url("business.css");
 @import url("footer.css");
+@import url("responsive.css");
 
 /* 공통영역 */
 .inner {
