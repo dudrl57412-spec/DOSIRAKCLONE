@@ -1,6 +1,6 @@
 .service {
   position: relative;
-  height: 100vh;
+  height: auto;
   /* background-color: aqua; */
   padding: 180px 0 210px;
 }
@@ -91,15 +91,15 @@
 .no-br {
   display: none;
 }
-.service-box-bt{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 140px;
-    padding: 7px 10px;
-    margin-top: 20px ;
-    background: none;
-    color: #fff;
-    border: 1px solid rgba(255,255,255,0.3);
+.service-box-bt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 140px;
+  padding: 7px 10px;
+  margin-top: 20px;
+  background: none;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
