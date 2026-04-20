@@ -28,11 +28,18 @@
   position: relative;
   grid-row: 1/3;
   /* 700  / 1420 *100 = 49.2957vw*/
-  height: 49.29vw;
-  max-height: 680px;
-  background-color: red;
+  /* height: 49.29vw; */
+  aspect-ratio: 35/34;
+  /* max-height: 680px; */
+  /* background-color: red; */
+  overflow: hidden;
+}
+.service-box-1:hover .service-bg {
+  transform: rotate(2deg) scale(1.1);
+  opacity: 0.9;
 }
 .service-bg {
+  transition: all 0.3s;
   position: absolute;
   top: 0;
   left: 0;
@@ -47,6 +54,10 @@
   position: relative;
   overflow: hidden;
 }
+.service-box-2:hover .service-bg {
+  transform: rotate(2deg) scale(1.1);
+  opacity: 0.9;
+}
 .service-bg-2 {
   width: 100%;
   height: 100%;
@@ -56,6 +67,10 @@
 .service-box-3 {
   position: relative;
   overflow: hidden;
+}
+.service-box-3:hover .service-bg {
+  transform: rotate(2deg) scale(1.1);
+  opacity: 0.9;
 }
 .service-bg-3 {
   width: 100%;

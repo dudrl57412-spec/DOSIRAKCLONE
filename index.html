@@ -76,9 +76,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- AOS CSS -->
+    <!-- waypoint -->
+    <!-- waypoint -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- AOS -->
+    <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- AOS JS -->
+    <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
@@ -91,6 +100,9 @@
   <body>
     <!-- 안내창 -->
     <!-- 위로가기버튼 -->
+    <button class="gotop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <div class="wrap">
       <!-- 상단 -->
       <header class="header">
@@ -166,7 +178,7 @@
           <h2 class="service-title"><span>도시락통</span> 서비스 둘러보기</h2>
           <!-- 서비스 이미지 영역 -->
           <div class="service-wrap">
-            <div class="service-box-1">
+            <div class="service-box-1" data-aos="flip-left"  data-aos-delay="300">
               <a href="#">
                 <div class="service-bg service-bg-1"></div>
                 <div class="service-box-wrap">
@@ -183,7 +195,7 @@
                 </div>
               </a>
             </div>
-            <div class="service-box-2">
+            <div class="service-box-2"  data-aos="flip-right"  data-aos-delay="400">
               <a href="#">
                 <div class="service-bg service-bg-2"></div>
                 <div class="service-box-wrap">
@@ -200,7 +212,7 @@
                 </div>
               </a>
             </div>
-            <div class="service-box-3">
+            <div class="service-box-3"  data-aos="flip-left"  data-aos-delay="500">
               <a href="#">
                 <div class="service-bg service-bg-3"></div>
                 <div class="service-box-wrap">
@@ -223,7 +235,7 @@
       <!-- 소개 -->
       <section class="about">
         <div class="inner">
-          <h2 class="about-title" data-aos="fade-up" data-aos-duration="600">
+          <h2 class="about-title" data-aos="fade-up" data-aos-duration="800">
             통신 서비스를 하나로 <br />
             해외여행 갈 땐 <span>도시락통.</span>
           </h2>
@@ -231,7 +243,7 @@
             <p
               class="about-txt-main"
               data-aos="fade-up"
-              data-aos-duration="900"
+              data-aos-duration="1200"
             >
               혼자서 갑자기 훌쩍 떠나는 여행도 <br />
               오랜만에 온 가족이 함께하는 여행도 <br />
@@ -240,13 +252,12 @@
             <p
               class="about-txt-desc"
               data-aos="fade-up"
-              data-aos-duration="1200"
+              data-aos-duration="1300"
             >
               국내외 어디서나 끊김없이 든든한 네트워크 제공하자는 모토를 가지고
               2004년, <br />
               (주)와이드모바일은 설립되었습니다.
             </p>
-
             <p
               class="about-txt-desc"
               data-aos="fade-up"
@@ -259,18 +270,15 @@
               href="#"
               class="about-link"
               data-aos="fade-up"
-              data-aos-duration="1200"
-              >ABOUT US
-              <i
-                class="fa-solid fa-arrow-right-long"
-                style="color: rgb(0, 0, 0)"
-              ></i
+              data-aos-duration="1800"
+              >ABOUT US <i class="fa-solid fa-arrow-right-long"></i
             ></a>
           </div>
         </div>
       </section>
       <!-- 비즈니스 -->
       <section class="business">
+        <!-- swiper -->
         <div class="swiper sw-business">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -312,8 +320,35 @@
             </div>
           </div>
         </div>
+        <!-- business 모달 -->
+        <div class="business-modal">
+          <img src="images/scroll_guide2.png" alt="스크롤 가이드" />
+        </div>
       </section>
       <!-- 하단 -->
+      <footer class="footer" id="footer">
+        <div class="inner">
+          <ul class="footer-list">
+            <li>
+              <span>상호 : ㈜와이드모바일<em class="footer-bar"></em></span>
+
+              <span
+                >통신판매업신고번호 : 제2018-서울서대문-0301호<em
+                  class="footer-bar"
+                ></em
+              ></span>
+
+              <span>사업자등록번호 : 121-81-66458</span>
+            </li>
+            <li>
+              고객센터 : <a href="tel:000-0000">1566-9070</a> (운영시간
+              9:00~18:00,<br class="footer-br" />
+              주말/공휴일/점심 12:00~13:00 제외)
+            </li>
+            <li><p>Copyright © WIDEMOBILE INC. Allright Reserved.</p></li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
