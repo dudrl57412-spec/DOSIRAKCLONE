@@ -5,6 +5,13 @@ window.addEventListener("load", () => {
   let footer = document.querySelector(".footer");
   let footerY = footer.offsetTop;
   const gotop = document.querySelector(".gotop");
+  //GOTOP
+  gotop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   // console.log(footerY);
   console.log(typeof Waypoint);
   //  전체 높이에 95% 위치할때
@@ -34,4 +41,11 @@ window.addEventListener("load", () => {
     offset: "80%",
   });
   AOS.init();
+  // business-modal
+  const businessModal = document.querySelector(".modal-wrap");
+  businessModal.addEventListener("click", () => {
+    console.log("click");
+
+    businessModal.style.display = "none";
+  });
 });
